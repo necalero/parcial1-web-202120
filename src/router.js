@@ -8,6 +8,7 @@ router.get('/', async (req, resp = response, next) => {
     await getPairsOfPlayers(req, resp, next);
   } catch (error) {
     resp.status(500).json({ error });
+    console.log('error');
   }
 });
 
